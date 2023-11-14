@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./7style.css" />
+	</head>
+	<body>
+		<form>
+			<div>
+				<label for="user">Имя</label>
+				<input type="text" name="name" id="user" required minlength="2" />
+			</div>
+			<div>
+				<label for="lastname">Фамилия</label>
+				<input
+					type="text"
+					name="lastname"
+					id="lastname"
+					required
+					maxlength="20"
+				/>
+			</div>
+			<div>
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" required />
+			</div>
+			<div>
+				<label for="phone">Телефон</label>
+				<input type="tel" name="phone" id="phone" required />
+			</div>
+			<div>
+				<label for="password">Пароль</label>
+				<input type="password" name="password" id="password" required />
+			</div>
+			<div>
+				<label for="gender">Пол</label>
+				<input type="radio" name="gender" id="gender" required /> Ж
+				<input type="radio" name="gender" id="gender" required /> М
+			</div>
+			<div>
+				<label for="country">Страна</label>
+				<select class="choice">
+					<option>ИнноДом</option>
+					<option>ИнноДом</option>
+					<option>ИнноДом</option>
+				</select>
+			</div>
+			<div>
+				<label>
+					<input type="checkbox" required />
+					<span>Я согласен с условиями</span>
+				</label>
+			</div>
+			<div>
+				<button type="submit">Зарегистрироваться</button>
+				<button type="reset">Сбросить</button>
+			</div>
+		</form>
+	</body>
+</html>
